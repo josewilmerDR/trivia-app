@@ -3,10 +3,9 @@ version: 0.2
 phases:
   install:
     commands:
-      - pyenv install -s 3.7.10
-      - pyenv global 3.7.10
+      - pyenv install -s 3.10.0
+      - pyenv global 3.10.0
       - pip install aws-sam-cli
-      - sam --version
   build:
     commands:
       - sam build
