@@ -5,6 +5,8 @@ phases:
     commands:
       - pyenv install -s 3.7.10
       - pyenv global 3.7.10
+      - pip install aws-sam-cli
+      - sam --version
   build:
     commands:
       - sam build
