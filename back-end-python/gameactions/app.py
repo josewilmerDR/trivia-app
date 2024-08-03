@@ -230,7 +230,7 @@ def trivia_calculate_scores(event, _):
         bonus = question["bonus"] if "bonus" in question else 0
 
         if last_question_id == question["id"] and last_answer == question["answer"]:
-            score += 20 + bonus
+            score += 30 + bonus
             TABLE.update_item(
                 Key={"gameId": game_id, "connectionId": connection_id},
                 AttributeUpdates={"score": {'Value': score, "Action": "PUT"}}
