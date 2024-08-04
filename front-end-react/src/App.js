@@ -18,7 +18,7 @@ function GetStarted(props) {
 
   return (<Card>
     <Card.Body>
-      <Card.Title>Let's get STARTED!</Card.Title>
+      <Card.Title>Let's GET STARTED!</Card.Title>
       <Card.Text>
         Click the button below to start a new game.
       </Card.Text>
